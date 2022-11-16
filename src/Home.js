@@ -139,10 +139,8 @@ const Home=()=>{
       <div className='part2'>
       <h2>INSPIRATION FOR YOUR NEXT ADVENTURE</h2>
 
-      
-
       <div className='part2b'>
-<div className='tb'>
+
 <div className='b'>
 <img src={adv5} alt='' className='imgb' />
 <div className='b1main main'>
@@ -154,7 +152,6 @@ const Home=()=>{
 <img src={distance} alt='' />
    <img src={twowks} className='pers' alt='' />
 </div>
-
 </div>
 </div>
 
@@ -171,11 +168,9 @@ const Home=()=>{
 </div>
 </div>
 </div>
-<div>
 
-   <div className='tb'>
    <div className='b'>
-<img src={adv7} alt='' className='imgb' />
+<img src={adv2} alt='' className='imgb' />
 <div className='b1main2 '>
 <div className='b1a'>
    <img src={desert} alt='' />
@@ -189,7 +184,7 @@ const Home=()=>{
 </div>
 
    <div className='b'>
-<img src={adv8} alt='' className='imgb' />
+<img src={adv1} alt='' className='imgb' />
 <div className='b1main3'>
 <div className='b1a'>
    <img src={desert} alt='' />
@@ -201,21 +196,19 @@ const Home=()=>{
 </div>
 </div>
 </div>
-</div>
 
 
 
 
 
 </div>
-<div className='ta'>
-      <div className='part2a'>
+
+<div className='part2a'>
         <div className='a'>
         <img src={adv1} alt=''  />
        
         </div>
 
-      
         <div className='a'>
         <img src={adv2} alt='' className='imgb' />
         <div className='a1main'>
@@ -229,9 +222,7 @@ const Home=()=>{
          </div>
          </div>
          </div>
-         </div>
-    
-         <div className='ta'></div>
+
          <div className='b'>
         <img src={adv3} alt='' className='imgb' />
         <div className='a1main2'>
@@ -244,10 +235,8 @@ const Home=()=>{
             <img src={twowks} className='pers' alt='' />
          </div>
          </div>
-       
          </div>
 
-       <div className='ta'>
          <div className='b'>
         <img src={adv4} alt='' className='imgb' />
         <div className='a1main3'>
@@ -260,17 +249,16 @@ const Home=()=>{
             <img src={twowks} className='pers' alt='' />
          </div>
          </div>
-         </div>
 
    
          
 
 
       </div>
-</div>
+
       </div>
-         
-         </div>
+
+     
 
         
 
