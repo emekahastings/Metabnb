@@ -1,9 +1,13 @@
 import metaicon from './metaicon.png'
 import {Link} from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import homeicon from './homeicon.png'
 import rent from './rent.png'
 import sub from './subtext.png'
+import mask from './mask (1).png'
+import wallet from './wallet.png'
+import cancel from './cancel.png'
+import arrow from './arrow.png'
 import metatext from './metantext.png'
 import ham from './ham.png'
 import one from './image 4.png'
@@ -25,13 +29,35 @@ import distance from './adv-distance.png'
 import imbt from './adv-imbt.png'
 import twowks from './adv-2wks.png'
 const Home=()=>{
-   const [show, setshow]= useState()
+   const [show, setshow]= useState(false)
+   const [modal, setmodal]= useState(false)
+   let menuref= useRef()
+  
+   useEffect(()=>{
+      let handler=(event)=>{
+      if(!menuref.current.contains(event.target)){
+         console.log(menuref.current)
+        setshow(false)
+      }
+   }
+      document.addEventListener('mousedown', handler)
+   })
+
+   let modalref=useRef()
+   useEffect(()=>{
+      let appear=(event)=>{
+      if(!menuref.current.contains(event.target)){
+         console.log(menuref.current)
+        setshow(false)
+      }
+   }
+      document.addEventListener('mousedown', appear)
+   })
+
     return(
     <div className='app'>
-       <div className='navbar'>
-         {/* <img src={header} alt='' className='bar' /> */}
-       
-
+       <div className='navbar' ref={menuref}>
+      
       <img src={ham} className='ham' alt=''  onClick={()=>setshow(!show)}/>
          {
            show? <div className='sidemenu'>
@@ -40,9 +66,10 @@ const Home=()=>{
             <p className='nft' >NFTs</p> 
             <p  className='comm'>Community</p>
          </div>:null
-         
 }
-<div className='iconbox '>
+         
+
+<div className='diconbox '>
      <img  src={homeicon} className='homeicon' alt=''/>
      <img src={metaicon} className='metaicon' alt='' />
      </div>
@@ -50,14 +77,33 @@ const Home=()=>{
             <p className='place'><Link to='places' style={{textDecoration:'none', color:'black'}}>Place to stay</Link></p>
             <p className='nft' >NFTs</p> 
             <p  className='comm'>Community</p>
-       
+          
         
         <div className='connect'>
- <div className='conn'><Link to='connect' style={{textDecoration:'none', color:'white'}}>ConnectWallet</Link></div>
+ <div className='conn'  onClick={()=>setmodal(!show)}>ConnectWallet</div>
+ {
+   modal? <div className='tag'>
+   <div className='first'>
+   <h2 className='co'>Connect wallet</h2>
+<img src={cancel} className='x' alt='' onClick={()=>{setmodal(false)}} />
+   </div>
+   <p className='choose'>Choose your preferred wallet</p>
+   <div className='oya'>
+   <img src={mask} className='mask' aria-readonly alt='' />  <b className='txt'>MetaMask</b>
+   <img src={arrow} className='arrow' aria-readonly alt='' /> 
+   
+   </div> 
+   <div className='oya'>
+   <img src={wallet} className='mask' aria-readonly alt='' />  <b className='txt'>WalletConnect</b>
+   <img src={arrow} className='arrow2' aria-readonly alt='' /> 
+   </div>
+</div>:null
+ }
         </div>
 
        </div>
 
+     
        <div className='img-group'>
    
      <div className='part1g'>
@@ -96,7 +142,7 @@ const Home=()=>{
       
 
       <div className='part2b'>
-
+<div className='tb'>
 <div className='b'>
 <img src={adv5} alt='' className='imgb' />
 <div className='b1main main'>
@@ -108,6 +154,7 @@ const Home=()=>{
 <img src={distance} alt='' />
    <img src={twowks} className='pers' alt='' />
 </div>
+
 </div>
 </div>
 
@@ -124,7 +171,9 @@ const Home=()=>{
 </div>
 </div>
 </div>
+<div>
 
+   <div className='tb'>
    <div className='b'>
 <img src={adv7} alt='' className='imgb' />
 <div className='b1main2 '>
@@ -152,19 +201,21 @@ const Home=()=>{
 </div>
 </div>
 </div>
+</div>
 
 
 
 
 
 </div>
-
+<div className='ta'>
       <div className='part2a'>
         <div className='a'>
         <img src={adv1} alt=''  />
        
         </div>
 
+      
         <div className='a'>
         <img src={adv2} alt='' className='imgb' />
         <div className='a1main'>
@@ -178,7 +229,9 @@ const Home=()=>{
          </div>
          </div>
          </div>
-
+         </div>
+    
+         <div className='ta'></div>
          <div className='b'>
         <img src={adv3} alt='' className='imgb' />
         <div className='a1main2'>
@@ -191,8 +244,10 @@ const Home=()=>{
             <img src={twowks} className='pers' alt='' />
          </div>
          </div>
+       
          </div>
 
+       <div className='ta'>
          <div className='b'>
         <img src={adv4} alt='' className='imgb' />
         <div className='a1main3'>
@@ -205,13 +260,14 @@ const Home=()=>{
             <img src={twowks} className='pers' alt='' />
          </div>
          </div>
+         </div>
 
    
          
 
 
       </div>
-
+</div>
       </div>
          
          </div>
@@ -242,6 +298,8 @@ const Home=()=>{
 <img src={contact} alt='' className='contact' />
 </div>
 
+
+</div>
     </div>
     )
 }

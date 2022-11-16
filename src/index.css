@@ -27,11 +27,21 @@
     color: white;
     padding: 7.5px;
 }
+.conns{
+    background-color: rgb(45, 1, 22);
+    color: white;
+    
+    padding: 7.5px;
+}
 .connect{
     position: relative;
     left: 25%;
    margin-top: 1.6%;
-
+}
+.connects{
+    position: relative;
+    left: 25%;
+   margin-top: 1.6%;
 
 }
 
@@ -248,30 +258,77 @@
     font-size: 1.2rem;
 }
 .tag{
-    width: 25%;
+    width: 270%;
     height: auto;
    line-height: 0px;
-    background-color: white;
-    border: 1px solid black;
+    background-color: rgb(225, 223, 223);
+    border: 1px solid white;
+    border-radius: 10px;
     position: absolute;
-    top: 2%;
+    top: 10%;
     z-index: 500;
     filter: opacity(1);
-    left: 37%;
+   
+    left: -590%;
+}
+.tags{
+    width: 270%;
+    height: auto;
+   line-height: 0px;
+    background-color: rgb(225, 223, 223);
+    border: 1px solid white;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    z-index: 500;
+    filter: opacity(1);
+   
+    left: -570%;
+}
+.co{
+    margin-top: 10%;
+ 
 }
 .choose{
     padding-left: 5%;
+    font-family: 'Red Rose', cursive;
+}
+.txt{
+    padding-top: 3.5%;
 }
 .oya{
+    display: flex;
     margin-left: 5%;
+    width: 80%;
+    padding: 1%;
     margin-bottom: 2%;
+    border: 1px rgb(194, 193, 193) solid;
+}
+.mask{
+    position: relative;
+   margin-left: 40%;
+    width: 8%;
+    right: 0%;
+    margin-left: 10%;
 }
 .x{
    width: 3%;
    height: 3%;
    position: relative;
    left: 45%;
-   margin-top: 3%;
+   margin-top: 8%;
+}
+.arrow{
+    width: 4%;
+    height:3%;
+    position: relative;
+    left: 40%;
+}
+.arrow2{
+    width: 4%;
+    height:3%;
+    position: relative;
+    left: 28%;
 }
 .dbar{
   display: flex;
@@ -294,22 +351,28 @@
 .hams{
     display: none;
 }
-.mask{
-    position: relative;
-    float: right;
-    width: 5%;
-    right: 80%;
-}
+
 .a{
     display: flex;
     
 }
-@media screen and (max-width:600px){
+.first{
+    border-bottom: 1px solid rgb(87, 85, 85);
+}
+.co{
+    margin-bottom: 6%;
+}
+.diconbox{
+    display: flex;
+}
+@media screen and (max-width:500px){
 body{
     overflow-x: hidden;
+    overflow-y: visible;
 }
 html{
     overflow-x: hidden;
+    overflow-y: visible;
 }
 .set{
     display: none;
@@ -335,8 +398,8 @@ html{
     
 }
 .search{
-   margin-top: 35%;
-    padding: 18%;
+   margin-top: 36%;
+    padding: 26%;
 }
 .platforms{
     width: 100vw;
@@ -351,7 +414,7 @@ html{
     display: block;
 }
 .b, .a{
-    margin-left: 5%;
+    margin-left: 10%;
 }
 .a1main{
     position: absolute;
@@ -396,9 +459,11 @@ html{
 
 .metantext{
     width: 100vw;
+    height: 120%;
 }
 .contact{
     width: 100vw;
+    height: 120%;
 }
 
 .drows{
@@ -408,7 +473,7 @@ html{
     margin-left: 7%;
 }
 .homeicon, .metaicon{
-    height: 20%;
+    height: 45%;
     position: relative;
     top: 10%;
     margin-left: 2%;
@@ -427,6 +492,12 @@ html{
 .diconbox{
     display: flex;
 }
+.connects{
+    position: relative;
+    left: 0%;
+   margin-top: 1.6%;
+
+}
 .homeicons{
     width: 10%;
 }
@@ -442,7 +513,7 @@ html{
 .conn{
     width: 100%;
     padding: 5px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: white;
     background-color: rgb(104, 4, 47);
 }
@@ -451,12 +522,12 @@ html{
     background-color: rgb(82, 3, 41);
     left: 0rem;
     display: block;
-    top: 20px;
+    top: 0px;
     z-index: 500;
     width: 50vw;
     height: 100vh;
   }
-  
+
   .sidemenu>p{
     font-size: 1.4rem;
     text-decoration: none;
@@ -501,4 +572,150 @@ html{
     padding-left: 2%;
     width: 73%;
 }
+.tag{
+    width: 270%;
+    height: auto;
+   line-height: 0px;
+    background-color: rgb(225, 223, 223);
+    border: 1px solid white;
+    border-radius: 10px;
+    position: absolute;
+    top: 70%;
+    z-index: 500;
+    filter: opacity(1);
+   
+    left: -200%;
+}
+.co{
+    margin-top: 10%;
+ 
+}
+.choose{
+    padding-left: 5%;
+    font-family: 'Red Rose', cursive;
+}
+.txt{
+    padding-top: 3.5%;
+}
+.oya{
+    display: flex;
+    margin-left: 5%;
+    width: 80%;
+    padding: 1%;
+    margin-bottom: 2%;
+    border: 1px rgb(194, 193, 193) solid;
+}
+.mask{
+    position: relative;
+   margin-left: 40%;
+    width: 8%;
+    right: 0%;
+    margin-left: 10%;
+}
+.x{
+   width: 3%;
+   height: 3%;
+   position: relative;
+   left: 45%;
+   margin-top: 8%;
+}
+.arrow{
+    width: 4%;
+    height:3%;
+    position: relative;
+    left: 40%;
+}
+@media screen and (max-width:390px){
+  
+    .connect{
+        left: -10%;
+  
+    }
+    .search{
+        margin-top: 33%;
+         padding: 18%;
+     }
+     .b, .a{
+       margin-left: 4%;
+    }
+    .metantext{
+        width: 100%;
+        height: 120%;
+        
+    }
+    .contact{
+        width: 100vw;
+        height: 120%;
+        margin-top: 5%;
+    }
+    .tag{
+        width: 270%;
+        height: auto;
+       line-height: 0px;
+        background-color: rgb(225, 223, 223);
+        border: 1px solid white;
+        border-radius: 10px;
+        position: absolute;
+        top: 80%;
+        z-index: 500;
+        filter: opacity(1);
+       
+        left: -200%;
+    }
+    .co{
+        margin-top: 10%;
+     
+    }
+    .choose{
+        padding-left: 5%;
+        font-family: 'Red Rose', cursive;
+    }
+    .connects{
+        position: relative;
+        left: -10%;
+       margin-top: 1.6%;
+    
+    }
+    .txt{
+        padding-top: 3.5%;
+    }
+    .oya{
+        display: flex;
+        margin-left: 5%;
+        width: 80%;
+        padding: 1%;
+        margin-bottom: 2%;
+        border: 1px rgb(194, 193, 193) solid;
+    }
+    .mask{
+        position: relative;
+       margin-left: 40%;
+        width: 8%;
+        right: 0%;
+        margin-left: 10%;
+    }
+    .x{
+       width: 3%;
+       height: 3%;
+       position: relative;
+       left: 45%;
+       margin-top: 8%;
+    }
+    .arrow{
+        width: 4%;
+        height:3%;
+        position: relative;
+        left: 40%;
+    }
+}
+@media screen and (min-width:501px) and (max-width:850px){
+    body{
+        background-color: red;
+    }
+    .ta, .tb{
+        display: flex;
+    }
+    
+}
+
 }
