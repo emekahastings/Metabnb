@@ -49,6 +49,12 @@ const Places=()=>{
    }
       document.addEventListener('mousedown', appear)
    })
+
+  
+ 
+
+
+ 
     return(
         <div className='app'>
            <div className='navbar'>
@@ -64,7 +70,7 @@ const Places=()=>{
           
         
         <div className='connects'>
- <div className='conn'  onClick={()=>setmodal(!show)}>ConnectWallet</div>
+ <div className='conn'   onClick={()=>setmodal(!show)}>ConnectWallet</div>
  {
    modal? <div className='tags'>
    <div className='first'>
