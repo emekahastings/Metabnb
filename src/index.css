@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Red+Rose:wght@300&family=Space+Mono&display=swap');
+.navbar{
+    display: flex;
+    margin-left: 5%;
+    font-size: 1rem;
+  
+}
+.homeicon, .metaicon{
+    height: 35%;
+    position: relative;
+    top: 30%;
+}
+.appz{
+    position: relative;
+    z-index: 200;
+    filter: opacity(0.7);
+    
+}
+.navbar>p{
+    font-size: 20px;
+    margin-left: 4%;
+    color: black;
+    font-family: 'Red Rose', cursive;
+}
+.conn{
+    background-color: rgb(45, 1, 22);
+    color: white;
+    padding: 7.5px;
+}
+.connect{
+    position: relative;
+    left: 25%;
+   margin-top: 1.6%;
+
+
+}
+
+.rent{
+    /* margin: 5%; */
+    width: 100%;
+    height: 80%;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+.subtext{
+   margin-left:5%;
+    width: 95%;
+    margin-top: 6%;
+    position: relative;
+   
+}
+.part1b{
+    display: block;
+}
+.part1c{
+    display: flex;
+}
+.searchinput{
+    width: 70%;
+    margin-top:4%;
+    height: 4vh;
+    margin-left: 5%;
+}
+.search{
+    width: 100%;
+   margin-top: 38%;
+    padding: 6.5px;
+    color: white;
+    /* padding-left: 20px; */
+    text-align: center;
+    background-color: rgb(57, 2, 34);
+}
+.one, .two, .three ,.four{
+    width: 65%;
+    margin-left: 3%;
+    
+}
+.two{
+    position: absolute;
+    top: -15%;
+}
+.four{
+    position: absolute;
+    top: 35%;
+    left: 68%;
+}
+
+.set{
+    margin-top: 7%;
+    position: relative;
+    top: 20%;
+    margin-left: 20%;
+}
+.img-group{
+    display: flex;
+}
+.middle{
+    display: flex;
+    color: white;
+    background-color: rgb(147, 10, 76);
+    margin-top: 2%;
+}
+
+.imga{
+    width: 100%;
+    position: relative;
+}
+/* .part2{
+    display: block;
+} */
+.part2a{
+    display: flex;
+    position: relative;
+}
+.part2b{
+    position: relative;
+    display: flex;
+}
+/* .a{
+    padding: 10px;
+    width: 22%;
+} */
+.b, .a{
+    width:22%;
+    padding: 10px;
+}
+
+.a1a, .a1b{
+    display: flex;
+   
+}
+.b1a, .b1b{
+    display: flex;
+  
+}
+.a1b{
+    margin-top: 5%;
+}
+.a1main{
+    position: absolute;
+    bottom: 13%;
+   
+    margin-left: 1%;
+
+}
+.b1main{
+    position: absolute;
+    bottom: 15%;
+    margin-left: 1%;
+}
+.b1main{
+    position: absolute;
+    bottom: 15%;
+    margin-left: 2%;
+}
+.ham{
+    display: none;
+}
+ .b1main1{
+    position: absolute;
+   bottom: 15%;
+   margin-left: 2%;
+ }
+.b1main2{
+    position: absolute;
+    bottom: 15%;
+    margin-left: 2%;
+}
+ .b1main3{
+    position: absolute;
+    bottom: 15%;
+    margin-left: 2%;
+}
+.a1main2{
+    position: absolute;
+    bottom: 15%;
+    margin-left: 2%;
+}
+ .a1main3{
+    position: absolute;
+    bottom: 15%;
+    margin-left: 2%;
+}
+.per{
+    margin-left: 25%;
+}
+.pers{
+    margin-left: 5%;
+}
+.part2>h2{
+    text-align: center;
+}
+.part3{
+    background-color: rgb(118, 13, 64);
+    display: flex;
+}
+.part3a{
+    position: relative;
+    left: 50%;
+}
+.place{
+    color: black;
+}
+.part3b{
+    margin-left: 0px;
+}
+.part3b>h2{
+    color: white;
+    font-size: 200;
+    font-family: 'Red Rose', cursive;
+    font-size: 1.3rem;
+    
+}
+.letters{
+    color: white;
+}
+.l{
+    color: purple;
+    width: fit-content;
+    background-color: white;
+    padding: 7px;
+
+}
+.contact{
+    margin-top: 0%;
+}
+.placebar{
+    display: flex;
+    padding-left: 2%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+.placebar>p{
+    font-size: 1rem;
+    font-family: 'Red Rose', cursive;
+    font-weight: 100;
+    padding-left: 5%;
+}
+.locate{
+    padding-left: 5%;
+    width: 13%;
+}
+.first{
+    display: flex;
+}
+.first>h2{
+    padding-left: 5%;
+    font-size: 1.2rem;
+}
+.tag{
+    width: 25%;
+    height: auto;
+   line-height: 0px;
+    background-color: white;
+    border: 1px solid black;
+    position: absolute;
+    top: 2%;
+    z-index: 500;
+    filter: opacity(1);
+    left: 37%;
+}
+.choose{
+    padding-left: 5%;
+}
+.oya{
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+.x{
+   width: 3%;
+   height: 3%;
+   position: relative;
+   left: 45%;
+   margin-top: 3%;
+}
+.dbar{
+  display: flex;
+ margin-top: 1%;
+}
+.dbar>p{
+    margin-left: 5%;
+    font-family: 'Red Rose', cursive;
+}
+.locate{
+    margin-left: 4%;
+    width: 7%;
+}
+.meta{
+    color: red;
+}
+.diconbox{
+    display: none;
+}
+.hams{
+    display: none;
+}
+.mask{
+    position: relative;
+    float: right;
+    width: 5%;
+    right: 80%;
+}
+.a{
+    display: flex;
+    
+}
+@media screen and (max-width:600px){
+body{
+    overflow-x: hidden;
+}
+html{
+    overflow-x: hidden;
+}
+.set{
+    display: none;
+}
+.navbar>p{
+    display: none;
+}
+.part1b{
+    width: 100vw;
+}
+.rent{
+    width: 85vw;
+}
+.subtext{
+    margin-top: 5%;
+    width: 85vw;
+    margin-bottom: 3%;
+}
+.searchinput{
+    width: 60%;
+    margin-top:4%;
+    max-height: 3.1%;
+    
+}
+.search{
+   margin-top: 35%;
+    padding: 18%;
+}
+.platforms{
+    width: 100vw;
+    height: auto;
+}
+.part2>h2{
+    font-size: 1.2rem;
+
+}
+
+.part2b, .part2a{
+    display: block;
+}
+.b, .a{
+    margin-left: 5%;
+}
+.a1main{
+    position: absolute;
+    bottom: 4%;
+    margin-left: 3%;
+}
+.a1main2{
+    position: absolute;
+    bottom: 28.5%;
+    margin-left: 3%;
+}
+.a1main3{
+    position: absolute;
+    bottom: 53.5%;
+    margin-left: 3%;
+}
+.dbar{
+    display: none;
+}
+
+.b1main{
+    position: absolute;
+    bottom: 79%;
+    margin-left: 3%;
+}
+.b1main1{
+    position: absolute;
+    bottom: 54%;
+    margin-left: 3%;
+}
+.b1main2{
+    position: absolute;
+    bottom: 28.7%;
+    margin-left: 2%;
+}
+ .b1main3{
+    position: absolute;
+    bottom: 3.5%;
+    margin-left: 2%;
+}
+
+
+.metantext{
+    width: 100vw;
+}
+.contact{
+    width: 100vw;
+}
+
+.drows{
+    display: none;
+}
+.mrows{
+    margin-left: 7%;
+}
+.homeicon, .metaicon{
+    height: 20%;
+    position: relative;
+    top: 10%;
+    margin-left: 2%;
+}
+.homeicona, .metaicona{
+    height: 45%;
+    position: relative;
+    top: 10%;
+    margin-left: 2%;
+}
+.iconbox{
+    position: relative;
+    left: 5%;
+    top: 0%;
+}
+.diconbox{
+    display: flex;
+}
+.homeicons{
+    width: 10%;
+}
+.metaicons{
+    width: 30%;
+}
+.headers{
+    display: none;
+}
+.connect{
+   left: 0%;
+}
+.conn{
+    width: 100%;
+    padding: 5px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: rgb(104, 4, 47);
+}
+.sidemenu{
+    position: absolute;
+    background-color: rgb(82, 3, 41);
+    left: 0rem;
+    display: block;
+    top: 20px;
+    z-index: 500;
+    width: 50vw;
+    height: 100vh;
+  }
+  
+  .sidemenu>p{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    margin-top: 3rem;
+    margin-left: 2%;
+    margin-bottom: 2rem;
+    z-index: 500;
+  }
+  .ham{
+    width: 7%;
+    height: 2%;
+    float: left;
+    display: block;
+    margin-bottom: 2%;
+  }
+  .hams{
+    width: 7%;
+    height: 2%;
+    float: left;
+    display: block;
+    position: relative;
+    bottom: 5%;
+  }
+  .appz{
+    filter: opacity(1);
+  }
+  .tag{
+    width: 80%;
+    height: auto;
+   line-height: 0px;
+    background-color: white;
+    border: 1px solid black;
+    position: absolute;
+    top: 1.5%;
+    z-index: 500;
+    filter: opacity(1);
+    left: 10%;
+}
+.locate{
+    padding-left: 2%;
+    width: 73%;
+}
+}
