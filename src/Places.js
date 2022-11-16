@@ -1,10 +1,5 @@
-import header from './header.png'
 import location from './location.png'
 import metaicon from './metaicon.png'
-import mask from './mask (1).png'
-import wallet from './wallet.png'
-import cancel from './cancel.png'
-import arrow from './arrow.png'
 import homeicon from './homeicon.png'
 import desert from './adv-desert.png'
 import distance from './adv-distance.png'
@@ -21,41 +16,16 @@ import adv5 from './adv5.png'
 import adv6 from './adv6.png'
 // import adv7 from './adv7.png'
 import ham from './ham.png'
-import { useState,  useEffect, useRef  } from 'react'
+import { useState } from 'react'
 
 
 const Places=()=>{
    const [show, setshow]= useState(false)
-   const [modal, setmodal]= useState(false)
-   let menuref= useRef()
   
-   useEffect(()=>{
-      let handler=(event)=>{
-      if(!menuref.current.contains(event.target)){
-         console.log(menuref.current)
-        setshow(false)
-      }
-   }
-      document.addEventListener('mousedown', handler)
-   })
-
-   let modalref=useRef()
-   useEffect(()=>{
-      let appear=(event)=>{
-      if(!menuref.current.contains(event.target)){
-         console.log(menuref.current)
-        setshow(false)
-      }
-   }
-      document.addEventListener('mousedown', appear)
-   })
-
   
- 
+   
 
-
- 
-    return(
+  return(
         <div className='app'>
            <div className='navbar'>
               <img src={ham} className='hams' alt=''  onClick={()=>setshow(!show)}/>
@@ -70,25 +40,8 @@ const Places=()=>{
           
         
         <div className='connects'>
- <div className='conn'   onClick={()=>setmodal(!show)}>ConnectWallet</div>
- {
-   modal? <div className='tags'>
-   <div className='first'>
-   <h2 className='co'>Connect wallet</h2>
-<img src={cancel} className='x' alt='' onClick={()=>{setmodal(false)}} />
-   </div>
-   <p className='choose'>Choose your preferred wallet</p>
-   <div className='oya'>
-   <img src={mask} className='mask' aria-readonly alt='' />  <b className='txt'>MetaMask</b>
-   <img src={arrow} className='arrow' aria-readonly alt='' /> 
-   
-   </div> 
-   <div className='oya'>
-   <img src={wallet} className='mask' aria-readonly alt='' />  <b className='txt'>WalletConnect</b>
-   <img src={arrow} className='arrow2' aria-readonly alt='' /> 
-   </div>
-</div>:null
- }
+ <div className='conn'>ConnectWallet</div>
+ 
  </div>
         </div>
       
