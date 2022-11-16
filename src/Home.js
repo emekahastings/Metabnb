@@ -205,7 +205,7 @@ const Home=()=>{
 
 <div className='part2a'>
         <div className='a'>
-        <img src={adv1} alt=''  />
+        <img src={adv3} alt=''  />
        
         </div>
 
