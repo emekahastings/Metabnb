@@ -8,6 +8,7 @@ const Connect=()=>{
       <div className="app" >
     
     <div className='tags'>
+      <div className='overlay'>
    <div className='first'>
    <h2 className='co'>Connect wallet</h2>
 <img src={cancel} className='x' alt='' />
@@ -22,6 +23,7 @@ const Connect=()=>{
    <img src={wallet} className='mask' aria-readonly alt='' />  <b className='txt'>WalletConnect</b>
    <img src={arrow} className='arrow2' aria-readonly alt='' /> 
    </div>
+      </div>
       </div>
       </div>
      )

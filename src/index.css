@@ -104,6 +104,9 @@
 .img-group{
     display: flex;
 }
+.houseb{
+    display:flex;
+}
 .middle{
     display: flex;
     color: white;
@@ -351,6 +354,9 @@
 .hams{
     display: none;
 }
+.overlay{
+    
+}
 
 .a{
     display: flex;
@@ -362,8 +368,82 @@
 .co{
     margin-bottom: 6%;
 }
+
 .diconbox{
     display: flex;
+}
+.tabpart{
+    display: none;
+}
+.part3{
+    background-color: rgb(128, 0, 68);
+}
+.part3b{
+    display: flex;
+}
+.letters{
+    color: white;
+    width: 120%;
+    font-size: 1rem;
+}
+.learn{
+    margin-left: 35%;
+}
+.l{
+    width: fit-content;
+    border-radius: 7.5px;
+    background-color: white;
+    color: rgb(128, 0, 60);
+    padding: 7px;
+}
+.imagecoll{
+    position: relative;
+    left: 30%;
+    top: 30%;
+}
+.eight{
+    position: relative;
+    left: -5%;
+}
+.nine{
+    position: relative;
+   bottom: 20%;
+   left:-38%;
+ 
+}
+.part4{
+    display: flex;
+    background-color: black;
+}
+.about, .places, .metab, .community{
+    margin-left: 10%;
+    color: white;
+    font-family: 'Red Rose', cursive;
+}
+.houseicon{
+    width:15%;
+    height: 15%;
+    position: relative;
+   margin-top: 15%;
+}
+.part3c{
+    font-family: 'Red Rose', cursive;
+    margin-left: 5%;
+    padding-bottom: 10%;
+}
+.socials{
+    margin-left: 10%;
+}
+.fb, .twitter, .ig{
+    margin-left: 2.5%;
+}
+.part3c>h1{
+    color: white;
+    padding-left: 30%;
+    margin-top: 20%;
+}
+.seven, .eight, .nine{
+    width: 25%;
 }
 @media screen and (max-width:500px){
 body{
@@ -375,10 +455,36 @@ html{
     overflow-y: visible;
 }
 .set{
+    display: block;
+}
+.tabpart{
     display: none;
 }
 .navbar>p{
     display: none;
+}
+.img-group{
+    display: block;
+}
+.one, .two, .three ,.four{
+    width: 45%;
+    margin-left: 0%;
+    
+}
+.two{
+    position: absolute;
+    top: -15%;
+    left: 48%;
+}
+.four{
+    position: absolute;
+    top: 35%;
+    left: 48%;
+}
+
+.set{
+    margin-top: 8%;
+    margin-left: 8%;
 }
 .part1b{
     width: 100vw;
@@ -508,7 +614,7 @@ html{
     display: none;
 }
 .connect{
-   left: 0%;
+   margin-left: -25%;
 }
 .conn{
     width: 100%;
@@ -522,7 +628,7 @@ html{
     background-color: rgb(82, 3, 41);
     left: 0rem;
     display: block;
-    top: 0px;
+    top: 40px;
     z-index: 500;
     width: 50vw;
     height: 100vh;
@@ -572,7 +678,7 @@ html{
     padding-left: 2%;
     width: 73%;
 }
-.tag{
+.tags{
     width: 270%;
     height: auto;
    line-height: 0px;
@@ -580,7 +686,7 @@ html{
     border: 1px solid white;
     border-radius: 10px;
     position: absolute;
-    top: 70%;
+    top: 90%;
     z-index: 500;
     filter: opacity(1);
    
@@ -625,6 +731,41 @@ html{
     position: relative;
     left: 40%;
 }
+.part3b{
+    display: block;
+}
+.imagecoll{
+    position: relative;
+   left: 20%;
+   padding-bottom: 30%;
+    top: 0%;
+}
+.seven, .eight, .nine{
+    width: 35%;
+}
+.eight{
+    position: relative;
+    left: -5%;
+}
+.nine{
+    position: absolute;
+  bottom: 22%;
+   left:8%;
+ 
+}
+.houseicon{
+    width: 10%;
+    height: 10%;
+    margin-top: 6%;
+}
+.part3c{
+    padding-bottom: 2%;
+}
+.part4{
+    display: block;
+}
+
+}
 @media screen and (max-width:390px){
   
     .connect{
@@ -666,15 +807,35 @@ html{
         margin-top: 10%;
      
     }
+    .tabpart{
+        display: none;
+    }
     .choose{
         padding-left: 5%;
         font-family: 'Red Rose', cursive;
     }
-    .connects{
+    .connect{
         position: relative;
-        left: -10%;
+        left: 10%;
        margin-top: 1.6%;
     
+    }
+    .tags{
+        width: 270%;
+        height: auto;
+       line-height: 0px;
+        background-color: rgb(225, 223, 223);
+        border: 1px solid white;
+        border-radius: 10px;
+        position: absolute;
+        top: 100%;
+        z-index: 500;
+        filter: opacity(1);
+       
+        left: -170%;
+    }
+    .img-group{
+        display: block;
     }
     .txt{
         padding-top: 3.5%;
@@ -686,6 +847,38 @@ html{
         padding: 1%;
         margin-bottom: 2%;
         border: 1px rgb(194, 193, 193) solid;
+    }
+    .set{
+        display: block;
+    }
+    .tabpart{
+        display: none;
+    }
+    .navbar>p{
+        display: none;
+    }
+    .img-group{
+        display: block;
+    }
+    .one, .two, .three ,.four{
+        width: 45%;
+        margin-left: 0%;
+        
+    }
+    .two{
+        position: absolute;
+        top: -15%;
+        left: 48%;
+    }
+    .four{
+        position: absolute;
+        top: 35%;
+        left: 48%;
+    }
+    
+    .set{
+        margin-top: 8%;
+        margin-left: 8%;
     }
     .mask{
         position: relative;
@@ -707,15 +900,5 @@ html{
         position: relative;
         left: 40%;
     }
-}
-@media screen and (min-width:501px) and (max-width:850px){
-    body{
-        background-color: red;
-    }
-    .ta, .tb{
-        display: flex;
-    }
-    
-}
 
 }

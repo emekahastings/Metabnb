@@ -4,7 +4,6 @@ import { useState} from 'react'
 import homeicon from './homeicon.png'
 import rent from './rent.png'
 import sub from './subtext.png'
-import metatext from './metantext.png'
 import ham from './ham.png'
 import one from './image 4.png'
 import two from './image 3.png'
@@ -18,26 +17,43 @@ import adv4 from './adv4.png'
 import adv5 from './adv5.png'
 import adv6 from './adv6.png'
 import desert from './adv-desert.png'
-import contact from './contact.png'
+import image7 from './image 7.png'
+import image8 from './image 8.png'
+import image9 from './image 9.png'
+import ig from './ig.png'
 import distance from './adv-distance.png'
+import mask from './mask (1).png'
+import wallet from './wallet.png'
+import cancel from './cancel.png'
+import arrow from './arrow.png'
 import imbt from './adv-imbt.png'
 import twowks from './adv-2wks.png'
+import fb from './fb.png'
+import twitter from './twitter.png'
+import houseicon from './houseicon.png'
+
 const Home=()=>{
-   const [show, setshow]= useState(false)
-  
+   const [show, setshow]= useState()
+   const [modal, setmodal]= useState(false)
+
+   function appear(){
+      setmodal(!modal)
+   }
+
 
     return(
     <div className='app'>
        <div className='navbar'>
       
-      <img src={ham} className='ham' alt='' />
-         {
+      <img src={ham} className='ham' alt=''  onClick={()=>setshow(!show)}  />
+      {
            show? <div className='sidemenu'>
-            <p  >Home</p>
-            <p className='place'><Link to='places' style={{textDecoration:'none', color:'white'}} onClick={setshow(true)}>Place to stay</Link></p>
+            <p >Home</p>
+            <p className='place'><Link to='places' style={{textDecoration:'none', color:'white'}}>Place to stay</Link></p>
             <p className='nft' >NFTs</p> 
-            <p  className='comm' >Community</p>
+            <p  className='comm'>Community</p>
          </div>:null
+         
 }
          
 
@@ -52,8 +68,31 @@ const Home=()=>{
           
         
         <div className='connect'>
- <div className='conn' >ConnectWallet</div>
- 
+ <div className='conn' onClick={appear}>  ConnectWallet</div>
+          {
+            modal &&(
+               <div className='tags'>
+      <div className='overlay'>
+   <div className='first'>
+   <h2 className='co'>Connect wallet</h2>
+<img src={cancel} className='x' alt='' onClick={appear} />
+   </div>
+   <p className='choose'>Choose your preferred wallet</p>
+   <div className='oya'>
+   <img src={mask} className='mask' aria-readonly alt='' />  <b className='txt'>MetaMask</b>
+   <img src={arrow} className='arrow' aria-readonly alt='' /> 
+   
+   </div> 
+   <div className='oya'>
+   <img src={wallet} className='mask' aria-readonly alt='' />  <b className='txt'>WalletConnect</b>
+   <img src={arrow} className='arrow2' aria-readonly alt='' /> 
+   </div>
+      </div>
+      </div>
+            )
+          }
+       
+           
         </div>
 
        </div>
@@ -205,32 +244,38 @@ const Home=()=>{
          </div>
          </div>
 
-   
-         
-
-
       </div>
 
       </div>
 
-     
-
-        
-
-        
-      
       <div className='part3'>
 
         <div className='part3b'>
-            <img src={metatext} alt='' className='metantext' /> <br />
+            {/* <img src={metatext} alt='' className='metantext' /> <br /> */}
+
+            <div className='part3c' >
+            <h1>Metabnb</h1>
             
-            {/* <p className='letters'>Discover our NFT gift card collection, Loyal <br />
+            <p className='letters'>Discover our NFT gift card collection, Loyal 
             customers get amazing gifdt cards which are <br />
             traded as NFTs. Thses Nfts, give our customers < br />
             access to loads of our exclusive services. 
-            
-            </p> */}
+            </p>
 
+            <div className='learn'>
+               <p className='l'>Learn more</p>
+            </div>
+          
+          </div>
+
+            <div className='imagecoll'> 
+            <img src={image7} alt='' className='seven' />
+            <img src={image8} alt=''  className='eight' />
+            <img src={image9} alt=''  className='nine' />
+            </div>
+
+
+             
             
 
         </div>
@@ -238,7 +283,49 @@ const Home=()=>{
       </div> 
 
 <div className='part4'>
-<img src={contact} alt='' className='contact' />
+{/* <img src={contact} alt='' className='contact' /> */}
+
+<div className='metab'> 
+   <div className='houseb'><img src={houseicon} alt='' className='houseicon'  /><h1>Metabnb</h1></div>
+   
+   <div className='socials'>
+      <img alt='' src={fb} className='fb' />
+      <img alt='' src={twitter} className='twitter' />
+      <img alt='' src={ig} className='ig' />
+   </div>
+   <img alt='' />
+</div>
+
+<div className='community'>
+   <h2>Community</h2> 
+   <p> NFT</p>
+   <p>Tokens</p>
+   <p>Landlords</p>
+   <p>Discord</p>
+</div>
+
+<div className='places'>
+   <h2>Places</h2> 
+   <p>Farms</p>
+   <p>Beach</p>
+   <p>Castles</p>
+   <p>Learn more</p>
+</div>
+
+<div className='about'>
+   <h2>About</h2> 
+   <p>Road map</p>
+   <p>Creators</p>
+   <p>Career</p>
+   <p>Contact us</p>
+</div>
+
+
+
+
+
+
+
 </div>
 
 
